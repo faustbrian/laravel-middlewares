@@ -1,5 +1,14 @@
 <?php
 
+/*
+ * This file is part of Laravel Middlewares.
+ *
+ * (c) Brian Faust <hello@brianfaust.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
 namespace BrianFaust\Middlewares\Sentinel;
 
 use Closure;
@@ -16,11 +25,11 @@ class PermissionMiddleware
      */
     public function handle($request, Closure $next, $permission)
     {
-        if (!is_array($permission)) {
+        if (! is_array($permission)) {
             $permission = [$permission];
         }
 
-        if (!$request->user()->hasAccess($permission)) {
+        if (! $request->user()->hasAccess($permission)) {
             throw new AccessDeniedHttpException(trans('auth.errors.invalid_permission'));
         }
 
