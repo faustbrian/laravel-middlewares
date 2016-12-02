@@ -11,8 +11,7 @@ $ composer require faustbrian/laravel-middlewares
 ## Usage
 
 ``` php
-$skeleton = new League\Skeleton();
-echo $skeleton->echoPhrase('Hello, League!');
+...
 ```
 
 ## Security
