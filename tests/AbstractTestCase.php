@@ -1,8 +1,5 @@
 <?php
 
-
-declare(strict_types=1);
-
 /*
  * This file is part of Laravel Middlewares.
  *
@@ -27,6 +24,6 @@ abstract class AbstractTestCase extends AbstractPackageTestCase
      */
     protected function getServiceProviderClass($app): string
     {
-        return \BrianFaust\Basket\ServiceProvider::class;
+        return \BrianFaust\Basket\BasketServiceProvider::class;
     }
 }
