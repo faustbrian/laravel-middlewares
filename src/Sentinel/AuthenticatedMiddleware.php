@@ -11,8 +11,8 @@
 
 namespace BrianFaust\Middlewares\Sentinel;
 
-use Cartalyst\Sentinel\Laravel\Facades\Sentinel;
 use Closure;
+use Cartalyst\Sentinel\Laravel\Facades\Sentinel;
 use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
 
 class AuthenticatedMiddleware

@@ -25,11 +25,11 @@ class PermissionAnyMiddleware
      */
     public function handle($request, Closure $next, $permission)
     {
-        if (!is_array($permission)) {
+        if (! is_array($permission)) {
             $permission = [$permission];
         }
 
-        if (!$request->user()->hasAnyAccess($permission)) {
+        if (! $request->user()->hasAnyAccess($permission)) {
             throw new AccessDeniedHttpException(trans('auth.errors.invalid_permission'));
         }
 
