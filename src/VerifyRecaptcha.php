@@ -12,9 +12,9 @@
 namespace BrianFaust\Middlewares;
 
 use Closure;
-use Illuminate\Config\Repository;
 use Illuminate\Http\Request;
 use Vinkla\Recaptcha\Recaptcha;
+use Illuminate\Config\Repository;
 use Vinkla\Recaptcha\RecaptchaException;
 
 class VerifyRecaptcha

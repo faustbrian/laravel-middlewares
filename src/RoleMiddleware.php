@@ -30,11 +30,11 @@ class RoleMiddleware
             abort(403);
         }
 
-        if (!$request->user()->hasAnyRole(explode('|', $role))) {
+        if (! $request->user()->hasAnyRole(explode('|', $role))) {
             abort(403);
         }
 
-        if ($permission && !$request->user()->can($permission)) {
+        if ($permission && ! $request->user()->can($permission)) {
             abort(403);
         }
 
