@@ -13,8 +13,8 @@ declare(strict_types=1);
 
 namespace BrianFaust\Middlewares\Sentinel;
 
-use Closure;
 use Cartalyst\Sentinel\Laravel\Facades\Sentinel;
+use Closure;
 use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
 
 class RoleMiddleware
@@ -30,7 +30,7 @@ class RoleMiddleware
     {
         $role = Sentinel::findRoleBySlug($role);
 
-        if (! $request->user()->inRole($role)) {
+        if (!$request->user()->inRole($role)) {
             throw new AccessDeniedHttpException(trans('auth.errors.invalid_permission'));
         }
 
