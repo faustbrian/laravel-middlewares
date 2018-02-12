@@ -13,8 +13,8 @@ declare(strict_types=1);
 
 namespace BrianFaust\Middlewares\Sentinel;
 
-use Closure;
 use Cartalyst\Sentinel\Laravel\Facades\Sentinel;
+use Closure;
 use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
 
 class AuthenticatedMiddleware
