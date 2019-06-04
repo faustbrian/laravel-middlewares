@@ -1,12 +1,12 @@
 {
-    "name": "faustbrian/laravel-middlewares",
+    "name": "artisanry/middlewares",
     "description": "Middlewares for 3rd-Party Packages for Laravel 5",
-    "keywords": ["laravel", "framework", "Laravel-Middlewares", "Laravel Middlewares", "Brian Faust", "faustbrian"],
+    "keywords": ["laravel", "framework", "Laravel-Middlewares", "Laravel Middlewares"],
     "license": "MIT",
     "authors": [{
         "name": "Brian Faust",
-        "email": "hello@brianfaust.me",
-        "homepage": "https://brianfaust.me"
+        "email": "hello@basecode.sh",
+        "homepage": "https://basecode.sh"
     }],
     "require": {
         "php": "^7.1",
@@ -19,12 +19,12 @@
     },
     "autoload": {
         "psr-4": {
-            "BrianFaust\\Middlewares\\": "src/"
+            "Artisanry\\Middlewares\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "BrianFaust\\Tests\\Middlewares\\": "tests"
+            "Artisanry\\Tests\\Middlewares\\": "tests"
         }
     },
     "config": {
